@@ -1,0 +1,98 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-12 19:38:20.678109",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "filter_transaction_section",
+  "ref_doctype",
+  "is_filter",
+  "get_data",
+  "column_break_lpli",
+  "from_date",
+  "to_date",
+  "section_break_vrjo",
+  "sync_hub_document"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_filter",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Filter"
+  },
+  {
+   "fieldname": "filter_transaction_section",
+   "fieldtype": "Section Break",
+   "label": "Filter Transaction"
+  },
+  {
+   "depends_on": "eval:doc.is_filter",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date",
+   "mandatory_depends_on": "eval:doc.is_filter"
+  },
+  {
+   "fieldname": "column_break_lpli",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.is_filter",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date",
+   "mandatory_depends_on": "eval:doc.is_filter"
+  },
+  {
+   "fieldname": "section_break_vrjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sync_hub_document",
+   "fieldtype": "Table",
+   "label": "Sync Hub Document",
+   "options": "Sync Hub Doctype"
+  },
+  {
+   "fieldname": "ref_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctype",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "get_data",
+   "fieldtype": "Button",
+   "label": "Get Data"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-10-16 13:40:19.394149",
+ "modified_by": "Administrator",
+ "module": "Stream Sync",
+ "name": "Sync Hub",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

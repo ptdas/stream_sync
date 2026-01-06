@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "field:mapping_name",
+ "creation": "2025-10-10 22:03:57.138482",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "mapping_name",
+  "local_doctype",
+  "remote_doctype",
+  "section_break_3",
+  "field_mapping"
+ ],
+ "fields": [
+  {
+   "fieldname": "mapping_name",
+   "fieldtype": "Data",
+   "label": "Mapping Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "local_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Local Document Type",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remote_doctype",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remote Document Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "field_mapping",
+   "fieldtype": "Table",
+   "label": "Field Mapping",
+   "options": "Doctype Field Mapping"
+  }
+ ],
+ "links": [],
+ "modified": "2026-01-06 11:38:47.061414",
+ "modified_by": "Administrator",
+ "module": "Stream Sync",
+ "name": "Doctype Mapping",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-10-12 19:32:41.892372",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document",
+  "update_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "update_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Update Type",
+   "options": "\nCreate\nUpdate",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "document",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Document",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-10-12 19:47:24.645452",
+ "modified_by": "Administrator",
+ "module": "Stream Sync",
+ "name": "Sync Hub Doctype",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
